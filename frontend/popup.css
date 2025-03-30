@@ -1,0 +1,107 @@
+HTML,
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: 50vh;
+    width: 300px;
+    background-color: rgb(11, 11, 11);
+}
+
+.main-sec {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 0rem;
+}
+
+.logo img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 190px;
+}
+
+
+.logo h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enable {
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enable-line {
+    color: white;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 100px;
+    height: 50px;
+    background: grey;
+    display: block;
+    border-radius: 50px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 45px;
+    transition: 0.3s;
+}
+
+input:checked+label {
+    background: #bada55;
+}
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 75px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.result h3,
+p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.result p {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
